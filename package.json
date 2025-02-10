@@ -1,0 +1,44 @@
+{
+  "name": "figma-tokens-converter",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "type": "module",
+  "bin": {
+    "figma-tokens-converter": "./cli.js"
+  },
+  "files": [
+    "./dist",
+    "package.json"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "test": "vitest run",
+    "format:prettier": "prettier --write ./src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/lodash": "^4.17.15",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.17.17",
+    "@vitest/runner": "^2.1.0",
+    "@vitest/snapshot": "^2.1.0",
+    "prettier": "^3.5.0",
+    "prettier-plugin-packagejson": "^2.5.8",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.8"
+  }
+}
